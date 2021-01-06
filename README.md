@@ -1,4 +1,8 @@
 # Tweet-Sentiment-Analysis
-Given a dataset of tweets and their sentiments (positive, negative or neutral), predict what part of each tweet could imply its sentiment. Training data (3.34 MB) was from Kaggle. I attacked this problem by using Roberta CNN. The highest Jaccard Index was 0.714, measured by unseen test data. Potential improvement could be a meta model with RoBERTa, NER and Question-Answering System.
+This project predicts part of a tweet to be the strong signal of its sentiment. The input training data includes 27,481 tweets with its sentiments and selected texts. Sentiments divide into 40% tweets being neutral, 31% being positive and 28% being negative. I removed stop words and special characters to train positive, negative and neutral tweets with Named-entity Recognition separately. I also trained the raw data with bidirectional encoder system, Roberta.
 
-The pretrained TensorFlow RoBERTa base model can be downloaded from Kaggle: https://www.kaggle.com/cdeotte/tf-roberta
+Updates (01/05/2021)
+* Investigate top common words, texts with only special characters, and the difference between the length of selected and original texts
+* Clean stop words, special characters and punctuations according to investigation results
+* Train cleaned and raw data with Named-entity Recognition for each sentiment
+* Train Roberta with raw data for different sentiment
