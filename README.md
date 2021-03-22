@@ -6,3 +6,5 @@ Updates (01/07/2021)
 * Clean part of stop words, special characters and punctuations according to investigation results
 * Compare results from Named-entity Recognition trained on cleaned and raw data for each sentiment
 * Train a four-layer Neural Network embedded with RoBERTa for each sentiment
+
+Reflective essay: https://qingchuanlyu.medium.com/redoing-projects-part-iii-nlp-538c99760a9e
